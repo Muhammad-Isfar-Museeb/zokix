@@ -4,9 +4,9 @@ import Reveal from "@/components/Reveal";
 import { categories } from "@/lib/toolsData";
 
 export const metadata: Metadata = {
-  title: "AI Tools — Zokix",
+  title: "AI Tools | Zokix",
   description:
-    "The generators behind Zokix — video, image, web, WordPress, voice and utility tools, each on its own page.",
+    "The generators behind Zokix: video, image, web, WordPress, voice and utility tools, each on its own page.",
 };
 
 export default function ToolsHubPage() {
@@ -29,7 +29,7 @@ export default function ToolsHubPage() {
               AI TOOLS
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-pearl-dim">
-              Every category lives on its own page — pick one to explore the
+              Every category lives on its own page. Pick one to explore the
               tools, what each is used for, and which ones are free.
             </p>
           </Reveal>

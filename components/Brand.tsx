@@ -1,7 +1,7 @@
 /*
  * Brand images rendered untouched from public/brand/, CSS-cropped to the
  * artwork's bounding box so the large empty margins in the source files
- * don't shrink the visible logo. Swap the files freely — if the artwork
+ * don't shrink the visible logo. Swap the files freely; if the artwork
  * position changes, only the percentages here need tuning.
  */
 

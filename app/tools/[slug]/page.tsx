@@ -15,9 +15,9 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const category = getCategory(slug);
-  if (!category) return { title: "AI Tools — Zokix" };
+  if (!category) return { title: "AI Tools | Zokix" };
   return {
-    title: `${category.title} — Zokix AI Tools`,
+    title: `${category.title} | Zokix AI Tools`,
     description: category.blurb,
   };
 }

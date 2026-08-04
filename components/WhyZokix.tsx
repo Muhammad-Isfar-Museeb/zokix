@@ -9,12 +9,12 @@ const points = [
   {
     n: "02",
     title: "One Studio, Full Stack",
-    desc: "Video, posts, web and brand under one roof — every asset speaks the same visual language.",
+    desc: "Video, posts, web and brand under one roof: every asset speaks the same visual language.",
   },
   {
     n: "03",
     title: "Built on Modern Tech",
-    desc: "Next.js, Tailwind, TypeScript and Motion power everything we ship — fast, responsive, future-proof.",
+    desc: "Next.js, Tailwind, TypeScript and Motion power everything we ship: fast, responsive and future-proof.",
   },
   {
     n: "04",

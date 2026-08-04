@@ -33,7 +33,7 @@ function buildIndex(): Entry[] {
 
   entries.push(
     { title: "AI Tools", tag: "PAGE", href: "/tools", keywords: ["tools", "toolkit", "ai", "generators", "apps"] },
-    { title: "Portfolio — Abdullah", tag: "PAGE", href: "/portfolio", keywords: ["portfolio", "work", "abdullah", "designer", "projects", "gallery"] },
+    { title: "Abdullah's Portfolio", tag: "PAGE", href: "/portfolio", keywords: ["portfolio", "work", "abdullah", "designer", "projects", "gallery"] },
     { title: "Contact", tag: "PAGE", href: "/#contact", keywords: ["contact", "email", "hire", "project", "quote", "whatsapp"] },
   );
 

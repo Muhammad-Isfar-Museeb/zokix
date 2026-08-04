@@ -12,7 +12,7 @@ const services = [
   {
     title: "Video Generation",
     href: "/tools/video",
-    desc: "Cinematic AI-generated video ads, intros, reels and product showcases — rendered fast, cut sharp.",
+    desc: "Cinematic AI-generated video ads, intros, reels and product showcases, rendered fast and cut sharp.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" className="h-9 w-9">
         <rect x="2.5" y="5" width="14" height="14" rx="2.5" stroke="#ece7de" strokeWidth="1.6" />
@@ -24,7 +24,7 @@ const services = [
   {
     title: "Post Generation",
     href: "/tools/image",
-    desc: "Scroll-stopping social media posts, carousels and captions — on-brand content generated at scale.",
+    desc: "Scroll-stopping social media posts, carousels and captions: on-brand content generated at scale.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" className="h-9 w-9">
         <rect x="3" y="3" width="18" height="18" rx="3" stroke="#ece7de" strokeWidth="1.6" />
@@ -37,7 +37,7 @@ const services = [
   {
     title: "Web Design Generator",
     href: "/tools/web-design",
-    desc: "Full landing pages and interfaces designed by AI, refined by humans — from wireframe to launch.",
+    desc: "Full landing pages and interfaces designed by AI, refined by humans, from wireframe to launch.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" className="h-9 w-9">
         <rect x="2.5" y="4" width="19" height="16" rx="2.5" stroke="#ece7de" strokeWidth="1.6" />
@@ -52,7 +52,7 @@ const services = [
   {
     title: "Logo & Brand Design",
     href: "/tools/image",
-    desc: "Metallic marks, wordmarks and full identity systems — brands built to cut through the noise.",
+    desc: "Metallic marks, wordmarks and full identity systems: brands built to cut through the noise.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" className="h-9 w-9">
         <path
@@ -76,7 +76,7 @@ export default function Services() {
               AI TOOLS
             </h2>
             <p className="mt-3 text-sm tracking-wide text-pearl-dim">
-              Four generators, plus every utility we swear by — templates, voice, downloads and more.
+              Four generators, plus every utility we swear by: templates, voice, downloads and more.
             </p>
           </Reveal>
         </div>

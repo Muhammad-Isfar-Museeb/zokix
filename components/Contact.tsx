@@ -9,7 +9,7 @@ export default function Contact() {
             START A PROJECT
           </h2>
           <p className="mx-auto mt-4 max-w-lg text-pearl-dim">
-            Tell us what you need — a video, a content engine, a website or a
+            Tell us what you need: a video, a content engine, a website or a
             whole brand. We&apos;ll take it from there.
           </p>
           <div className="mt-9 flex flex-wrap items-center justify-center gap-4">
@@ -20,7 +20,9 @@ export default function Contact() {
               ZOKIXAI@GMAIL.COM
             </a>
             <a
-              href="#"
+              href="https://wa.me/923411534889"
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-ghost rounded-lg px-8 py-4 font-display text-sm font-bold tracking-widest"
             >
               WHATSAPP

@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import Loader from "@/components/Loader";
 
 export const metadata: Metadata = {
-  title: "Zokix — AI-Powered Creative Tech Studio",
+  title: "Zokix: AI-Powered Creative Tech Studio",
   description:
     "Zokix generates videos, social posts, web designs and brand identities. Black & pearl, engineered.",
 };

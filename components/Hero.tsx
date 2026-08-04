@@ -41,7 +41,7 @@ export default function Hero() {
           className="mt-6 max-w-2xl text-lg text-pearl-dim md:text-xl"
         >
           AI-powered creative tech studio. We generate videos, social posts,
-          web designs and brand identities — engineered in black &amp; pearl.
+          web designs and brand identities, engineered in black &amp; pearl.
         </motion.p>
 
         <motion.div

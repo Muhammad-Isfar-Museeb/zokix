@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Reveal from "@/components/Reveal";
 
 export const metadata: Metadata = {
-  title: "Abdullah — Portfolio | Zokix",
+  title: "Abdullah's Portfolio | Zokix",
   description:
-    "Portfolio of Abdullah — graphic designer at Zokix. Thumbnails, social posts, branding and creative design.",
+    "Portfolio of Abdullah, graphic designer at Zokix. Thumbnails, social posts, branding and creative design.",
 };
 
 const skills = [
@@ -25,14 +25,32 @@ const stats = [
   { value: "4", label: "Design Disciplines" },
 ];
 
-// Replace these placeholder tiles with real work images in /public/work
 const works = [
-  { title: "YouTube Thumbnails", tag: "THUMBNAILS" },
-  { title: "Instagram Campaigns", tag: "SOCIAL POSTS" },
-  { title: "Logo & Identity", tag: "BRANDING" },
-  { title: "Gaming Banners", tag: "BANNERS" },
-  { title: "Product Promos", tag: "ADS" },
-  { title: "Event Posters", tag: "POSTERS" },
+  {
+    title: "30 Cold Cases, Solved",
+    tag: "YOUTUBE THUMBNAIL",
+    img: "/work/work-cold-cases-30-solved.png",
+  },
+  {
+    title: "10 Cold Crime Cases, Solved",
+    tag: "YOUTUBE THUMBNAIL",
+    img: "/work/work-cold-crime-cases-10-solved.png",
+  },
+  {
+    title: "High-Converting WordPress Websites",
+    tag: "WEB / AD DESIGN",
+    img: "/work/work-wordpress-websites.png",
+  },
+  {
+    title: "The Dark Side of Reddit",
+    tag: "YOUTUBE THUMBNAIL",
+    img: "/work/work-dark-side-of-reddit.png",
+  },
+  {
+    title: "$500,000 Money Story",
+    tag: "YOUTUBE THUMBNAIL",
+    img: "/work/work-500k-money-story.png",
+  },
 ];
 
 const services = [
@@ -50,7 +68,7 @@ const services = [
   },
   {
     title: "Custom Graphics",
-    desc: "Banners, posters, ads — any visual, any format.",
+    desc: "Banners, posters, ads: any visual, any format.",
   },
 ];
 
@@ -70,6 +88,16 @@ const testimonials = [
 export default function PortfolioPage() {
   return (
     <div className="pt-16">
+      {/* Hero banner */}
+      <section className="border-b hairline">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/work/abdullah-portfolio-hero.webp"
+          alt="Abdullah's Portfolio"
+          className="h-auto w-full object-cover"
+        />
+      </section>
+
       {/* Hero */}
       <section className="dot-grid relative overflow-hidden border-b hairline">
         <div
@@ -91,7 +119,7 @@ export default function PortfolioPage() {
               GRAPHIC DESIGNER &amp; VISUAL CREATIVE
             </p>
             <p className="mx-auto mt-6 max-w-2xl text-pearl-dim">
-              I design visuals that stop the scroll — thumbnails, social posts,
+              I design visuals that stop the scroll: thumbnails, social posts,
               brand identities and everything in between. Clean execution,
               bold impact, delivered on time.
             </p>
@@ -103,7 +131,7 @@ export default function PortfolioPage() {
                 SEE MY WORK
               </a>
               <a
-                href="#hire"
+                href="mailto:abdullahtahir1357@gmail.com"
                 className="btn-ghost rounded-lg px-7 py-3.5 font-display text-sm font-bold tracking-widest"
               >
                 HIRE ME
@@ -144,7 +172,7 @@ export default function PortfolioPage() {
               </h2>
               <p className="mt-5 leading-relaxed text-pearl-dim">
                 I&apos;m Abdullah, a graphic designer focused on digital-first
-                creative — the kind of visuals that live on feeds, channels and
+                creative, the kind of visuals that live on feeds, channels and
                 storefronts. My work blends strong typography, sharp
                 composition and modern AI tooling to move fast without losing
                 craft.
@@ -196,8 +224,14 @@ export default function PortfolioPage() {
               >
                 <Reveal delay={i * 0.06}>
                   <div className="keycap">
-                    <div className="keycap-face flex aspect-[4/3] items-center justify-center">
-                      <span className="font-display text-[10px] tracking-[0.35em] text-pearl-dim transition-colors group-hover:text-pearl-bright">
+                    <div className="keycap-face relative aspect-[4/3] overflow-hidden">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={w.img}
+                        alt={w.title}
+                        className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                      />
+                      <span className="absolute bottom-2 left-2 rounded bg-black/60 px-2 py-1 font-display text-[10px] tracking-[0.35em] text-pearl-dim backdrop-blur-sm transition-colors group-hover:text-pearl-bright">
                         {w.tag}
                       </span>
                     </div>
@@ -254,7 +288,7 @@ export default function PortfolioPage() {
                 <p className="pearl-text font-display text-4xl">&ldquo;</p>
                 <p className="mt-2 leading-relaxed text-pearl">{t.quote}</p>
                 <p className="mt-5 text-xs tracking-[0.2em] text-pearl-dim">
-                  — {t.name.toUpperCase()}
+                  • {t.name.toUpperCase()}
                 </p>
               </Reveal>
             </div>
@@ -273,12 +307,22 @@ export default function PortfolioPage() {
               Have a project in mind? Reach out and let&apos;s make it look
               incredible.
             </p>
-            <a
-              href="mailto:zokixai@gmail.com"
-              className="btn-pearl mt-9 inline-block rounded-lg px-8 py-4 font-display text-sm font-bold tracking-widest"
-            >
-              GET IN TOUCH
-            </a>
+            <div className="mt-9 flex flex-wrap items-center justify-center gap-4">
+              <a
+                href="mailto:zokixai@gmail.com"
+                className="btn-pearl inline-block rounded-lg px-8 py-4 font-display text-sm font-bold tracking-widest"
+              >
+                GET IN TOUCH
+              </a>
+              <a
+                href="https://instagram.com/abd.ullah._.07"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-ghost inline-block rounded-lg px-8 py-4 font-display text-sm font-bold tracking-widest"
+              >
+                INSTAGRAM
+              </a>
+            </div>
           </Reveal>
         </div>
       </section>

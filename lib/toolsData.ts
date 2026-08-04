@@ -22,7 +22,7 @@ export const categories: Category[] = [
     mark: "VID",
     blurb: "Generate, edit and cut video with AI.",
     tools: [
-      { name: "Veed.io", mark: "VEED", url: "https://www.veed.io", tag: "VIDEO EDITOR", usage: "Edit videos in the browser — trim, subtitle and resize clips for any platform." },
+      { name: "Veed.io", mark: "VEED", url: "https://www.veed.io", tag: "VIDEO EDITOR", usage: "Edit videos in the browser: trim, subtitle and resize clips for any platform." },
       { name: "PixVerse", mark: "PXV", url: "https://pixverse.ai", tag: "VIDEO GENERATION", usage: "Turn text prompts or still images into short AI video clips." },
       { name: "Gemini", mark: "GEM", url: "https://gemini.google.com", tag: "AI VIDEO & MORE", usage: "Generate video ideas, scripts and Veo-powered clips from a single prompt." },
       { name: "Google Vids", mark: "VIDS", url: "https://workspace.google.com/products/vids/", tag: "VIDEO CREATION", usage: "Create polished work and promo videos with AI assists and templates." },
@@ -81,7 +81,7 @@ export const categories: Category[] = [
     tools: [
       { name: "TTSMaker", mark: "TTS", url: "https://ttsmaker.com", tag: "TEXT TO SPEECH", usage: "Convert text to natural speech free in 100+ languages, no signup.", free: true },
       { name: "ElevenLabs", mark: "11L", url: "https://elevenlabs.io", tag: "AI VOICE", usage: "Generate lifelike AI voiceovers and clone voices for narration." },
-      { name: "Voicemod", mark: "VCM", url: "https://www.voicemod.net", tag: "VOICE CHANGER", usage: "Change your voice in real time for streams, calls and games — free.", free: true },
+      { name: "Voicemod", mark: "VCM", url: "https://www.voicemod.net", tag: "VOICE CHANGER", usage: "Change your voice in real time for streams, calls and games. Free.", free: true },
       { name: "Vocal Remover", mark: "VR", url: "https://vocalremover.org", tag: "VOCAL SPLITTER", usage: "Split vocals from music free in the browser for edits and karaoke.", free: true },
     ],
   },
@@ -89,10 +89,10 @@ export const categories: Category[] = [
     slug: "downloader",
     title: "VIDEO DOWNLOADERS",
     mark: "DL",
-    blurb: "Free, open-source video downloading — no shady third parties.",
+    blurb: "Free, open-source video downloading, no shady third parties.",
     tools: [
-      { name: "Cobalt", mark: "CBT", url: "https://cobalt.tools", tag: "OPEN SOURCE", usage: "Paste a link and download video or audio from major platforms — free, no ads.", free: true },
-      { name: "yt-dlp", mark: "YTD", url: "https://github.com/yt-dlp/yt-dlp", tag: "OPEN SOURCE CLI", usage: "The open-source command-line downloader for power users — free forever.", free: true },
+      { name: "Cobalt", mark: "CBT", url: "https://cobalt.tools", tag: "OPEN SOURCE", usage: "Paste a link and download video or audio from major platforms, free with no ads.", free: true },
+      { name: "yt-dlp", mark: "YTD", url: "https://github.com/yt-dlp/yt-dlp", tag: "OPEN SOURCE CLI", usage: "The open-source command-line downloader for power users. Free forever.", free: true },
     ],
   },
   {
@@ -112,7 +112,7 @@ export const categories: Category[] = [
     mark: "BG",
     blurb: "Cut backgrounds out of any image in one click.",
     tools: [
-      { name: "BG Remover", mark: "BGR", url: "https://www.remove.bg", tag: "BACKGROUND REMOVAL", usage: "Upload an image and get a clean transparent cutout automatically — free.", free: true },
+      { name: "BG Remover", mark: "BGR", url: "https://www.remove.bg", tag: "BACKGROUND REMOVAL", usage: "Upload an image and get a clean transparent cutout automatically. Free.", free: true },
       { name: "Adobe Express BG Remover", mark: "AXB", url: "https://www.adobe.com/express/feature/image/remove-background", tag: "BACKGROUND REMOVAL", usage: "Free one-click background removal with quick export.", free: true },
     ],
   },
