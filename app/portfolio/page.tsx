@@ -1,10 +1,25 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Reveal from "@/components/Reveal";
 
+const title = "Abdullah's Portfolio | Zokix";
+const description =
+  "Portfolio of Abdullah, graphic designer at Zokix. Thumbnails, social posts, branding and creative design.";
+
 export const metadata: Metadata = {
-  title: "Abdullah's Portfolio | Zokix",
-  description:
-    "Portfolio of Abdullah, graphic designer at Zokix. Thumbnails, social posts, branding and creative design.",
+  title,
+  description,
+  openGraph: {
+    title,
+    description,
+    url: "/portfolio",
+    type: "profile",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+  },
 };
 
 const skills = [
@@ -89,12 +104,14 @@ export default function PortfolioPage() {
   return (
     <div className="pt-16">
       {/* Hero banner */}
-      <section className="border-b hairline">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+      <section className="relative aspect-[1412/817] w-full border-b hairline">
+        <Image
           src="/work/abdullah-portfolio-hero.webp"
           alt="Abdullah's Portfolio"
-          className="h-auto w-full object-cover"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
         />
       </section>
 
@@ -225,11 +242,12 @@ export default function PortfolioPage() {
                 <Reveal delay={i * 0.06}>
                   <div className="keycap">
                     <div className="keycap-face relative aspect-[4/3] overflow-hidden">
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img
+                      <Image
                         src={w.img}
                         alt={w.title}
-                        className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                        fill
+                        sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                        className="object-cover transition-transform duration-300 group-hover:scale-105"
                       />
                       <span className="absolute bottom-2 left-2 rounded bg-black/60 px-2 py-1 font-display text-[10px] tracking-[0.35em] text-pearl-dim backdrop-blur-sm transition-colors group-hover:text-pearl-bright">
                         {w.tag}

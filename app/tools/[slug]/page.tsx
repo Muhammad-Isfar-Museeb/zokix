@@ -16,9 +16,21 @@ export async function generateMetadata({
   const { slug } = await params;
   const category = getCategory(slug);
   if (!category) return { title: "AI Tools | Zokix" };
+  const title = `${category.title} | Zokix AI Tools`;
   return {
-    title: `${category.title} | Zokix AI Tools`,
+    title,
     description: category.blurb,
+    openGraph: {
+      title,
+      description: category.blurb,
+      url: `/tools/${slug}`,
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description: category.blurb,
+    },
   };
 }
 

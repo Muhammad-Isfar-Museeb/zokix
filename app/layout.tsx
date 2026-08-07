@@ -4,10 +4,26 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Loader from "@/components/Loader";
 
+const title = "Zokix: AI-Powered Creative Tech Studio";
+const description =
+  "Zokix generates videos, social posts, web designs and brand identities. Black & pearl, engineered.";
+
 export const metadata: Metadata = {
-  title: "Zokix: AI-Powered Creative Tech Studio",
-  description:
-    "Zokix generates videos, social posts, web designs and brand identities. Black & pearl, engineered.",
+  metadataBase: new URL("https://zokix.online"),
+  title,
+  description,
+  openGraph: {
+    title,
+    description,
+    url: "/",
+    siteName: "Zokix",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+  },
 };
 
 export default function RootLayout({

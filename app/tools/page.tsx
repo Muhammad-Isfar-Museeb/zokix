@@ -3,10 +3,24 @@ import Link from "next/link";
 import Reveal from "@/components/Reveal";
 import { categories } from "@/lib/toolsData";
 
+const title = "AI Tools | Zokix";
+const description =
+  "The generators behind Zokix: video, image, web, WordPress, voice and utility tools, each on its own page.";
+
 export const metadata: Metadata = {
-  title: "AI Tools | Zokix",
-  description:
-    "The generators behind Zokix: video, image, web, WordPress, voice and utility tools, each on its own page.",
+  title,
+  description,
+  openGraph: {
+    title,
+    description,
+    url: "/tools",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+  },
 };
 
 export default function ToolsHubPage() {
