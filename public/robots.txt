@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://zokix.online
+
+# Sitemaps
+Sitemap: https://zokix.online/sitemap.xml
