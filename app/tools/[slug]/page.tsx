@@ -90,9 +90,18 @@ export default async function CategoryPage({
                   <div className="flex flex-col items-center">
                     <div className="keycap inline-block">
                       <div className="keycap-face flex h-20 w-20 items-center justify-center">
-                        <span className="pearl-text font-display text-base font-black tracking-wider">
-                          {t.mark}
-                        </span>
+                        {t.logo ? (
+                          // eslint-disable-next-line @next/next/no-img-element
+                          <img
+                            src={t.logo}
+                            alt={`${t.name} logo`}
+                            className="h-10 w-10 object-contain"
+                          />
+                        ) : (
+                          <span className="pearl-text font-display text-base font-black tracking-wider">
+                            {t.mark}
+                          </span>
+                        )}
                       </div>
                     </div>
                     <div className="mt-5 flex items-center justify-center gap-2">
