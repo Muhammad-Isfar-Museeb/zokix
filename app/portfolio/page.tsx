@@ -103,8 +103,8 @@ const testimonials = [
 export default function PortfolioPage() {
   return (
     <div className="pt-16">
-      {/* Hero banner */}
-      <section className="relative aspect-[1412/817] w-full border-b hairline">
+      {/* Hero */}
+      <section className="dot-grid relative overflow-hidden border-b hairline">
         <Image
           src="/work/abdullah-portfolio-hero.webp"
           alt="Abdullah's Portfolio"
@@ -113,10 +113,13 @@ export default function PortfolioPage() {
           sizes="100vw"
           className="object-cover"
         />
-      </section>
-
-      {/* Hero */}
-      <section className="dot-grid relative overflow-hidden border-b hairline">
+        <div
+          className="pointer-events-none absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(180deg, rgba(5,5,5,0.55) 0%, rgba(5,5,5,0.85) 55%, rgba(5,5,5,0.97) 100%)",
+          }}
+        />
         <div
           className="pointer-events-none absolute left-1/2 top-1/2 h-[500px] w-[800px] -translate-x-1/2 -translate-y-1/2 rounded-full opacity-40"
           style={{
