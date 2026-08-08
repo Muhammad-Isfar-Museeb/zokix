@@ -29,7 +29,7 @@ export const categories: Category[] = [
       { name: "Google Vids", mark: "VIDS", url: "https://workspace.google.com/products/vids/", tag: "VIDEO CREATION", usage: "Create polished work and promo videos with AI assists and templates.", logo: "/tools/logos/google.svg" },
       { name: "Flow", mark: "FLW", url: "https://labs.google/flow", tag: "AI FILMMAKING", usage: "Direct AI films scene-by-scene with Google's Veo filmmaking tool.", logo: "/tools/logos/google.svg" },
       { name: "Lovable", mark: "LOV", url: "https://lovable.dev", tag: "AI BUILDER", usage: "Build video landing pages and web apps by chatting with AI." },
-      { name: "Canva AI", mark: "CAI", url: "https://www.canva.com/ai", tag: "VIDEO & DESIGN", usage: "Generate and edit social-ready videos with Canva's AI magic tools." },
+      { name: "Canva AI", mark: "CAI", url: "https://www.canva.com/ai", tag: "VIDEO & DESIGN", usage: "Generate and edit social-ready videos with Canva's AI magic tools.", logo: "/tools/logos/canva.png" },
       { name: "Sora", mark: "SOR", url: "https://sora.com", tag: "VIDEO GENERATION", usage: "Generate cinematic clips from text with OpenAI's video model." },
       { name: "Runway", mark: "RW", url: "https://runwayml.com", tag: "VIDEO & VFX", usage: "Generate, extend and VFX-edit footage with Runway's Gen AI models." },
     ],
@@ -42,9 +42,9 @@ export const categories: Category[] = [
     tools: [
       { name: "Canva AI", mark: "CAI", url: "https://www.canva.com/ai", tag: "IMAGE & DESIGN", usage: "Generate images and drop them straight into social post designs." },
       { name: "Gemini", mark: "GEM", url: "https://gemini.google.com", tag: "IMAGE GENERATION", usage: "Create and edit images conversationally with Google's AI.", logo: "/tools/logos/gemini.svg" },
-      { name: "ChatGPT", mark: "GPT", url: "https://chatgpt.com", tag: "IMAGE GENERATION", usage: "Generate images, mockups and graphics with GPT's image tools." },
+      { name: "ChatGPT", mark: "GPT", url: "https://chatgpt.com", tag: "IMAGE GENERATION", usage: "Generate images, mockups and graphics with GPT's image tools.", logo: "/tools/logos/chatgpt.png" },
       { name: "Claude", mark: "CLD", url: "https://claude.ai", tag: "AI ASSISTANT", usage: "Write creative briefs, captions and campaign copy to pair with visuals.", logo: "/tools/logos/claude.svg" },
-      { name: "XField", mark: "XF", url: "https://x.ai", tag: "IMAGE GENERATION", usage: "Generate stylized AI images from text prompts." },
+      { name: "Higgsfield", mark: "HF", url: "https://higgsfield.ai", tag: "IMAGE GENERATION", usage: "Generate stylized AI images from text prompts.", logo: "/tools/logos/higgsfield.png" },
       { name: "Meta AI", mark: "MTA", url: "https://www.meta.ai", tag: "IMAGE GENERATION", usage: "Free image generation inside WhatsApp, Instagram and the web.", free: true, logo: "/tools/logos/metaai.svg" },
       { name: "Gemini Watermark Remover", mark: "GWR", url: "https://geminiwatermarkremover.io/", tag: "WATERMARK REMOVER", usage: "Clean Gemini watermarks off generated images for final exports.", free: true },
       { name: "Midjourney", mark: "MJ", url: "https://www.midjourney.com", tag: "AI ART", usage: "Create high-end AI art and concept visuals from prompts." },
@@ -71,7 +71,7 @@ export const categories: Category[] = [
       { name: "WordPress.org Themes", mark: "WP", url: "https://wordpress.org/themes/", tag: "OFFICIAL DIRECTORY", usage: "Browse thousands of free official WordPress templates by niche and feature.", free: true, logo: "/tools/logos/wordpress.svg" },
       { name: "Astra", mark: "AST", url: "https://wpastra.com", tag: "STARTER TEMPLATES", usage: "Import free lightweight starter templates for any kind of site.", free: true, logo: "/tools/logos/astra.svg" },
       { name: "GeneratePress", mark: "GP", url: "https://generatepress.com", tag: "FAST THEME", usage: "Use the free theme and template library built for speed.", free: true },
-      { name: "OceanWP", mark: "OCW", url: "https://oceanwp.org", tag: "MULTIPURPOSE", usage: "Pick free demo templates for shops, blogs and business sites.", free: true },
+      { name: "OceanWP", mark: "OCW", url: "https://oceanwp.org", tag: "MULTIPURPOSE", usage: "Pick free demo templates for shops, blogs and business sites.", free: true, logo: "/tools/logos/oceanwp.png" },
     ],
   },
   {
@@ -80,10 +80,10 @@ export const categories: Category[] = [
     mark: "VOX",
     blurb: "Text-to-speech, voice change and vocal cleanup.",
     tools: [
-      { name: "TTSMaker", mark: "TTS", url: "https://ttsmaker.com", tag: "TEXT TO SPEECH", usage: "Convert text to natural speech free in 100+ languages, no signup.", free: true },
+      { name: "TTSMaker", mark: "TTS", url: "https://ttsmaker.com", tag: "TEXT TO SPEECH", usage: "Convert text to natural speech free in 100+ languages, no signup.", free: true, logo: "/tools/logos/ttsmaker.png" },
       { name: "ElevenLabs", mark: "11L", url: "https://elevenlabs.io", tag: "AI VOICE", usage: "Generate lifelike AI voiceovers and clone voices for narration.", logo: "/tools/logos/elevenlabs.svg" },
-      { name: "Voicemod", mark: "VCM", url: "https://www.voicemod.net", tag: "VOICE CHANGER", usage: "Change your voice in real time for streams, calls and games. Free.", free: true },
-      { name: "Vocal Remover", mark: "VR", url: "https://vocalremover.org", tag: "VOCAL SPLITTER", usage: "Split vocals from music free in the browser for edits and karaoke.", free: true },
+      { name: "Voicemod", mark: "VCM", url: "https://www.voicemod.net", tag: "VOICE CHANGER", usage: "Change your voice in real time for streams, calls and games. Free.", free: true, logo: "/tools/logos/voicemod.png" },
+      { name: "Vocal Remover", mark: "VR", url: "https://vocalremover.org", tag: "VOCAL SPLITTER", usage: "Split vocals from music free in the browser for edits and karaoke.", free: true, logo: "/tools/logos/vocalremover.png" },
     ],
   },
   {
@@ -102,9 +102,9 @@ export const categories: Category[] = [
     mark: "PDF",
     blurb: "Convert PDFs into editable Word documents.",
     tools: [
-      { name: "PDF24", mark: "P24", url: "https://tools.pdf24.org/en/pdf-to-word", tag: "CONVERTER", usage: "Convert PDF to Word 100% free with no file limits.", free: true },
+      { name: "PDF24", mark: "P24", url: "https://tools.pdf24.org/en/pdf-to-word", tag: "CONVERTER", usage: "Convert PDF to Word 100% free with no file limits.", free: true, logo: "/tools/logos/pdf24.png" },
       { name: "iLovePDF", mark: "ILP", url: "https://www.ilovepdf.com/pdf_to_word", tag: "CONVERTER", usage: "Drag, drop and convert PDFs to editable Word docs free in seconds.", free: true, logo: "/tools/logos/ilovepdf.svg" },
-      { name: "Adobe PDF to Word", mark: "ADB", url: "https://www.adobe.com/acrobat/online/pdf-to-word.html", tag: "CONVERTER", usage: "Adobe's free online converter keeps formatting intact.", free: true },
+      { name: "Adobe PDF to Word", mark: "ADB", url: "https://www.adobe.com/acrobat/online/pdf-to-word.html", tag: "CONVERTER", usage: "Adobe's free online converter keeps formatting intact.", free: true, logo: "/tools/logos/adobeacrobat.png" },
     ],
   },
   {
